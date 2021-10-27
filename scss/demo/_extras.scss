@@ -1,0 +1,88 @@
+
+/* ----------------------------------------------------------------
+
+	extras.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+.container-fluid {
+	overflow: hidden;
+}
+
+.page-btn {
+	font-family: $heading-font;
+	font-size: 0.875rem;
+	font-weight: 700;
+	color: $theme-color;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+
+	height: 3.8rem;
+	display: block;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $theme-color;
+	background-size: 100% 100%;
+
+	&.yellow {
+		background-image: url(../images/icons/btn-yellow-outline.png);
+		width: 14rem;
+	}
+
+	&.white {
+		background-image: url(../images/icons/btn-whiteoutline.png);
+		width: 26rem;
+	}
+
+	&.yellow-btn {
+		background-image: url(../images/icons/btn-yellow.png);
+		width: 18rem;
+		height: 9rem;
+		margin-left: -2.5rem;
+	}
+
+	&:hover {
+		transform: scale(1.05);
+	}
+}
+
+.slick-slide {
+	margin: 1rem;
+	height: auto !important;
+}
+
+.arrows {
+	padding-left: 4rem;
+
+	a {
+		font-size: 2.5rem;
+		color: #42413e;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		display: none !important;
+	}
+}
+
+.stream  {
+	background-image: url(../images/statement-bg.png);
+    background-repeat: no-repeat;
+    padding: 2rem 2rem 2rem 8rem;
+    background-size: 100% 100%;
+	margin-bottom: 1.875rem;
+
+	@include media-breakpoint-down(lg) {
+		padding: 2rem 5rem;
+	}
+}

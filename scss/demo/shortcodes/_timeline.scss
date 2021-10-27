@@ -1,0 +1,37 @@
+/*-----------------------------------------------------------------------------------
+
+	Shortcodes: timeline.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Timeline Styles
+-----------------------------------------------------------------*/
+.event-title {
+    letter-spacing: 0.0875rem;
+}
+
+.event-thumbnail {
+    &.robot {
+        img {
+            max-width: 100%;
+        }
+
+        @include media-breakpoint-up(lg) {
+            position: absolute;
+            top: 4rem;
+            right: 6rem;
+            max-width: 100%;
+            z-index: -1;
+        }
+    }
+
+    &.control {
+        @include media-breakpoint-up(lg) {
+            position: relative;
+            left: -5rem;
+            top: 7rem;
+            z-index: 0;
+        }
+    }
+}

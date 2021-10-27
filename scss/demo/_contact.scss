@@ -1,0 +1,17 @@
+/* ----------------------------------------------------------------
+
+	Contact.scss
+
+-----------------------------------------------------------------*/
+.contact-thumbnail {
+	img {
+		max-width: 100%;
+	}
+	position: absolute;
+	top: -7rem;
+	left: 3rem;
+
+	@include media-breakpoint-down(lg) {
+		top: 0;
+	}
+}
